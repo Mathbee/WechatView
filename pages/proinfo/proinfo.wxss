@@ -1,0 +1,32 @@
+/* pages/proinfo/proinfo.wxss 
+
+view {
+  border: 1px solid red;
+}
+
+image {
+  border: 1px solid red;
+}
+
+text {
+  border: 1px solid red;
+}
+*/
+.page-swiper {
+  margin: 0rpx 10rpx 10rpx 10rpx;
+}
+
+.page-swiper swiper {
+  height: 500rpx;
+}
+
+.page-swiper image {
+  width: 100%;
+}
+
+.pprice_actual {
+  font-size: 80rpx;
+  color: red;
+  font-weight: bold;
+  margin: 0rpx 50rpx 0rpx 10rpx;
+}

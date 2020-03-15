@@ -1,0 +1,45 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="userinfo">
+  <image class="userinfo-avatarUrl" src="{{userinfo.avatarUrl}}"></image>
+  <text class="userinfo-nickname">{{userinfo.nickName}}</text>
+</view>
+
+<cover-view class="order">
+  <view class="myorder">我的订单</view>
+  <view class="order-info">
+    <view class="order-info1">
+      <image class="order-img" src="{{order}}"></image>
+      <text class="order-text">全部订单</text>
+    </view>
+    <view class="order-info1">
+      <image class="order-img" src="{{pay}}"></image>
+      <text class="order-text">待付款</text>
+    </view>
+    <view class="order-info1">
+      <image class="order-img" src="{{delivery}}"></image>
+      <text class="order-text">待提货</text>
+    </view>
+    <view class="order-info1">
+      <image class="order-img" src="{{take}}"></image>
+      <text class="order-text">已提货</text>
+    </view>
+  </view>
+</cover-view>
+
+<view class="person-list">
+  <view class="list-item">
+    <image class="item-image" src="{{myOrder2}}"></image>
+    <text class="item-text">收货地址</text>
+  </view>
+  <view class="person-line"></view>
+  <view class="list-item">
+    <image class="item-image" src="{{myOrder3}}"></image>
+    <text class="item-text">在线客服</text>
+  </view>
+  <view class="person-line"></view>
+  <view class="list-item">
+    <image class="item-image" src="{{myOrder4}}"></image>
+    <text class="item-text">我的评价</text>
+  </view>
+</view>
+<view class="separate"></view>

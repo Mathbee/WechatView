@@ -1,0 +1,35 @@
+/* pages/propay/propay.wxss */
+
+view {
+  border: 1rpx red solid;
+}
+
+text {
+  border: 1rpx red solid;
+}
+
+input {
+  border: 1rpx red solid;
+}
+
+image {
+  border: 1rpx red solid;
+}
+
+.address {
+  height: 150rpx;
+  margin: 5rpx 15rpx;
+}
+
+.addressInfo {
+  margin: 15rpx 0rpx 15rpx 15rpx;
+}
+
+.addressInfo input {
+  width: 200rpx;
+  display: inline-block;
+}
+
+.addressInfo text {
+  display: inline-block;
+}

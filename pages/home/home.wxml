@@ -1,0 +1,59 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class="page-head">
+    <view class="page-logo">
+      <image src="/image/yxhstudiomp_logo.png"></image>
+      <text class="t-head1">杨小花工作室</text>
+      <text class="t-head2">年轻、大胆、时尚</text>
+    </view>
+  </view>
+
+  <view class="page-swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{bgswiper}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="page-photos">
+    <view class="page-photos-body">
+      <view>
+        <text class="page-photos-head1">样片</text>
+        <text class="page-photos-head2" bindtap="showProList">查看更多 ></text>
+      </view>
+      <scroll-view style="white-space: nowrap;display: flex;" scroll-x="true">
+        <view wx:for="{{bgphotos}}" wx:key="*this" style="width: 380rpx; height: 300rpx;display: inline-block; ">
+          <image src="{{item.pimgurl}}" style="width:350rpx;height:220rpx;border-radius: 15rpx;margin:10rpx 0rpx 0rpx 0rpx;" />
+          <view>
+            <text>{{item.pname}}</text>
+            <text>{{item.pprice}}</text>
+          </view>
+          <view style="color:darkgray; font-size:28rpx;">{{item.premark}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <view class="page-shoes">
+    <view class="page-shoes-body">
+      <view>
+        <text class="page-shoes-head1">样款</text>
+        <text class="page-shoes-head2" bindtap="showProList">查看更多 ></text>
+      </view>
+      <scroll-view style="white-space: nowrap;display: flex;" scroll-x="true">
+        <view wx:for="{{bgphotos}}" wx:key="*this" style="width: 380rpx; height: 230rpx;display: inline-block; ">
+          <image src="{{item.pimgurl}}" style="width:350rpx;height:220rpx;border-radius: 15rpx;margin:10rpx 0rpx 0rpx 0rpx;" />
+          <view>
+            <text>{{item.pname}}</text>
+            <text>{{item.pprice}}</text>
+          </view>
+          <view style="color:darkgray; font-size:28rpx;">{{item.premark}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,11 @@
+<!--pages/photoslist/photoslist.wxml-->
+<view>
+  <view wx:for="{{bgphotos}}" wx:key="*this" style=" height: 450rpx;margin:0rpx 0rpx 0rpx 15rpx;">
+    <image src="{{item.pimgurl}}" style="width:690rpx;height:350rpx;border-radius: 20rpx;margin:10rpx 0rpx 0rpx 0rpx;" bindtap="showProinfo" data-id="{{item.pid}}" />
+    <view>
+      <text>{{item.pname}}</text>
+      <text>{{item.pprice}}</text>
+    </view>
+    <view style="color:darkgray; font-size:28rpx;">{{item.premark}}</view>
+  </view>
+</view>

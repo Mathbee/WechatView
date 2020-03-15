@@ -1,0 +1,105 @@
+/*view {
+  border: 1rpx red solid;
+}
+
+text {
+  border: 1rpx red solid;
+}
+
+input {
+  border: 1rpx red solid;
+}
+
+image {
+  border: 1rpx red solid;
+}*/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ee9e95;
+  width: 100%;
+  height: 300rpx;
+}
+
+.userinfo-avatarUrl {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 40rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+  display: flex;
+}
+
+/* 订单 */
+
+.order {
+  margin-bottom: 40rpx;
+  background-color: lightgray;
+  padding: 20rpx 0rpx 20rpx 0rpx;
+}
+
+.myorder {
+  font-size: 40rpx;
+  margin: 0rpx 20rpx 20rpx 20rpx;
+  padding: 0rpx 0rpx 20rpx 0rpx;
+  border-bottom: black 2rpx solid;
+}
+
+.order-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.order-info1 {
+  text-align: center;
+  margin-left: 20rpx;
+  margin-right: 50rpx;
+}
+
+.order-img {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.order-text {
+  display: block;
+}
+
+/* 列表 */
+
+.person-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80rpx;
+}
+
+.item-image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx;
+}
+
+.item-text {
+  color: gray;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+
+.person-line {
+  width: 80%;
+  height: 2rpx;
+  background: lightgray;
+  margin-left: 90rpx;
+}

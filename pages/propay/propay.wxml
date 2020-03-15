@@ -1,0 +1,37 @@
+<!--pages/propay/propay.wxml-->
+<view>
+  <view>
+    <view class="address" wx:if="{{address==null}}">请添加收货人地址</view>
+    <view class="address" wx:else="{{address!=null}}">
+      <view class='addressInfo'>
+        <text class="addressInfo_receiver">收货人：</text>
+        <input class="addressInfo_receiver" type="text" value="{{address.Address.contact}}"></input>
+        <input class="addressInfo_receiver" type="text" value="{{address.Address.mobile}}"></input>
+      </view>
+      <view class='addressInfo'>
+        <text>{{address.Province.province}}</text>
+        <text>{{address.City.city}}</text>
+        <text>{{address.Town.town}}</text>
+        <text>{{address.Address.address}}</text>
+      </view>
+    </view>
+  </view>
+  <view>
+    <image src="{{proinfo.pimgurl}}"></image>
+    <text>{{proinfo.name}}</text>
+    <text>{{proinfo.pprice_actual}}</text>
+    <text>{{proinfo.pprice}}</text>
+    <text>购买数量：</text>
+    <input type="radio">-</input>
+    <text>1</text>
+    <input type="radio">+</input>
+  </view>
+  <view>
+    <text>共计一件商品</text>
+    <text>应付金额：$399</text>
+  </view>
+  <view>
+    <text>合计：￥399</text>
+    <input>提交订单</input>
+  </view>
+</view>
