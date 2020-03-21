@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/logs/logs",
+    "pages/prolist/prolist",
+    "pages/proinfo/proinfo",
+    "pages/userinfo/userinfo",
+    "pages/shopcar/shopcar",
+    "pages/propay/propay"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EE9E95",
+    "navigationBarTitleText": "杨小花工作室",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/userinfo/userinfo",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

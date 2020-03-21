@@ -1,0 +1,46 @@
+<view class="propay">
+  <!-- 收货地址 -->
+  <view class="address" wx:if="{{address==null}}">
+    <view class="address_title">收货信息：</view>
+    <view class="address_function">新增地址</view>
+  </view>
+  <view class="address" wx:else="{{address!=null}}">
+    <view class="address_title">收货信息：</view>
+    <view class="address_function">修改地址</view>
+    <view class="addressInfo">
+      <view class="addressInfo_receiver">
+        <text>收货人：</text>
+        <text>{{address.contact}}</text>
+      </view>
+      <view class="addressInfo_mobile">
+        <text>电话：</text>
+        <text>{{address.mobile}}</text>
+      </view>
+      <view class="addressInfo_address">
+        <text>地址：</text>
+        <text>{{address.province.province}}</text>
+        <text>{{address.city.city}}</text>
+        <text>{{address.town.town}}</text>
+        <text>{{address.address}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!--商品信息-->
+  <view class="proinfo">
+    <image class="proinfo_image" src="{{proinfo.pimgurl}}" bindtap="showProinfo" data-id="{{proinfo.pid}}" />
+    <view class="proinfo_pinfo">
+      <view class="proinfo_pname">{{proinfo.pname}}</view>
+      <view class="proinfo_premark">{{proinfo.premark}}</view>
+    </view>
+  </view>
+</view>
+
+<!--底部功能-->
+<view class="propay_footer">
+  <view class="propay_footer_total">合计：</view>
+  <view class="propay_footer_moneyunit">$189890</view>
+  <view class="propay_footer_settle">
+    <button>去结算</button>
+  </view>
+</view>

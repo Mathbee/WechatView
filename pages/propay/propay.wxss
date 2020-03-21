@@ -1,0 +1,104 @@
+view {
+  border: 1rpx red solid;
+}
+
+text {
+  border: 1rpx red solid;
+}
+
+input {
+  border: 1rpx red solid;
+}
+
+image {
+  border: 1rpx red solid;
+}
+
+.propay {
+  margin: 0rpx 15rpx;
+}
+
+/*收货人地址*/
+
+.address {
+  margin: 5rpx 0rpx;
+}
+
+.address_title {
+  display: inline-block;
+  border-bottom: 1rpx solid gainsboro;
+}
+
+.address_function {
+  display: inline-block;
+  background: #ee9e95;
+  border-radius: 15rpx;
+}
+
+.addressInfo {
+  margin: 15rpx 0rpx;
+}
+
+/*商品信息*/
+
+.proinfo {
+  margin: 30rpx 0rpx 0rpx 0rpx;
+  border-radius: 20rpx;
+  background: white;
+}
+
+.proinfo_image {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+
+.proinfo_pinfo {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15rpx;
+}
+
+.proinfo_pname {
+  margin: 15rpx 0rpx 0rpx 0rpx;
+}
+
+.proinfo_premark {
+  margin: 10rpx 0rpx 0rpx 0rpx;
+  color: darkgray;
+  font-size: 28rpx;
+}
+
+/*底部功能*/
+
+.propay_footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 80rpx;
+  background: white;
+}
+
+.propay_footer_total {
+  display: inline-block;
+  margin: 20rpx 0rpx 0rpx 100rpx;
+}
+
+.propay_footer_moneyunit {
+  display: inline-block;
+  margin: 15rpx 0rpx 0rpx 0rpx;
+}
+
+.propay_footer_settle {
+  width: 200rpx;
+  height: 80rpx;
+  position: absolute;
+  display: inline-block;
+  right: 0rpx;
+  bottom: 0rpx;
+}
+
+.propay_footer_settle button {
+  background: red;
+  color: white;
+}

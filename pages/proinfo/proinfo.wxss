@@ -1,0 +1,81 @@
+view {
+  border: 1px solid red;
+}
+
+image {
+  border: 1px solid red;
+}
+
+text {
+  border: 1px solid red;
+}
+
+.proinfo {
+  margin: 0rpx 10rpx 10rpx 10rpx;
+}
+
+.proinfo_swiper {
+  height: 500rpx;
+}
+
+.proinfo_swiper image {
+  width: 100%;
+}
+
+.proinfo_body_pprice_actual {
+  font-size: 80rpx;
+  color: red;
+  font-weight: bold;
+  margin: 0rpx 50rpx 0rpx 10rpx;
+}
+
+.proinfo_body_pprice {
+  text-decoration: line-through;
+}
+
+.proinfo_body_fans {
+  background-color: purple;
+  color: white;
+  font-size: 30rpx;
+}
+
+/*商品图片列表*/
+
+.proinfo_imagelist {
+  margin: 0rpx 10rpx 0rpx 10rpx;
+}
+
+.proinfo_imagelist image {
+  width: 100%;
+  height: 350rpx;
+}
+
+/*底部功能*/
+
+.proinfo_footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 80rpx;
+  background: white;
+}
+
+.proinfo_footer_function {
+  width: 40%;
+  text-align: center;
+  background: red;
+  color: white;
+  display: inline-block;
+  line-height: 80rpx;
+}
+
+.proinfo_footer_addShopcar {
+  background: orange;
+}
+
+.proinfo_footer_toHomePage {
+  width: 17%;
+  text-align: center;
+  display: inline-block;
+  line-height: 80rpx;
+}

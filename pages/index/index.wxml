@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view wx:if="{{canIUse}}">
+  <view class="header">
+    <image src="/image/yxhstudiomp_logo.png"></image>
+  </view>
+
+  <button class="button_login" type="primary" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+    进入杨小花工作室主页
+  </button>
+</view>
+
+<view wx:else>请升级微信版本</view>

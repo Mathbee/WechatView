@@ -1,0 +1,8 @@
+<view class="prolist" wx:for="{{bgphotos}}" wx:key="*this">
+  <image class="prolist_image" src="{{item.pimgurl}}" bindtap="showProinfo" data-id="{{item.pid}}" />
+  <view>
+    <text>{{item.pname}}</text>
+    <text>{{item.pprice}}</text>
+  </view>
+  <view class="prolist_explain">{{item.premark}}</view>
+</view>

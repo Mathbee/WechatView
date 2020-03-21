@@ -1,0 +1,36 @@
+<view class="page_head">
+  <view class="page_title">
+    <image class="page_title_logo" src="/image/yxhstudiomp_logo.png"></image>
+    <text class="page_title_head1">杨小花工作室</text>
+    <text class="page_title_head2">年轻、大胆、时尚</text>
+  </view>
+</view>
+
+<view class="page_swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{bgswiper}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class="page_content">
+  <view class="page_content_body">
+    <view class="page_content_body_head">
+      <text class="page_content_body_head_head1">样片</text>
+      <text class="page_content_body_head_head2" bindtap="showProList">查看更多 ></text>
+    </view>
+    <scroll-view scroll-x="true">
+      <view class="page_content_body_list" wx:for="{{bgphotos}}" wx:key="*this">
+        <image src="{{item.pimgurl}}" />
+        <view>
+          <text>{{item.pname}}</text>
+          <text>{{item.pprice}}</text>
+        </view>
+        <view class="page_content_body_list_remark">{{item.premark}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

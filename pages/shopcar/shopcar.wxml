@@ -1,0 +1,35 @@
+<view class="shopcar_point" wx:if="{{shopcar==''}}">
+  <image class="shopcar_imagepoint" src="/image/shopcar/shopcar.jpg"></image>
+  <text class="shopcar_textpoint">你还没有添加任何商品哦~</text>
+  <button class="shopcar_buttonpoint" bindtap="toHomePage">去逛逛</button>
+</view>
+
+<!--购物车-->
+<view class="shopcar" wx:if="{{shopcar!=''}}">
+  <!--购物车列表-->
+  <view class="shopcar_list" wx:for="{{shopcar}}" wx:key="*this">
+    <image class="shopcar_image" src="{{item.produce.pimgurl}}" bindtap="showProinfo" data-id="{{item.produce.pid}}" />
+    <view class="shopcar_pinfo">
+      <view class="shopcar_pname">{{item.produce.pname}}</view>
+      <view class="shopcar_premark">{{item.produce.premark}}</view>
+    </view>
+    <view class="shopcar_money">
+      <view class="shopcar_pprice">￥{{item.produce.pprice}}</view>
+      <view class="shopcar_button_add">
+        <button>+</button>
+      </view>
+      <view class="shopcar_scnum">{{item.scnum}}</view>
+      <view class="shopcar_button_delete">
+        <button>-</button>
+      </view>
+    </view>
+  </view>
+  <!--底部功能-->
+  <view class="shopcar_footer">
+    <view class="shopcar_footer_total">合计：</view>
+    <view class="shopcar_footer_moneyunit">$189890</view>
+    <view class="shopcar_footer_settle">
+      <button>去结算</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,123 @@
+view {
+  border: 1rpx solid red;
+}
+
+text {
+  border: 1rpx solid red;
+}
+
+button {
+  border: 1rpx solid red;
+}
+
+page {
+  background: gainsboro;
+}
+
+.shopcar_point {
+  padding-top: 200rpx;
+  text-align: center;
+}
+
+.shopcar_imagepoint {
+  margin: 50rpx 0rpx 50rpx 0rpx;
+  height: 150rpx;
+  width: 150rpx;
+}
+
+.shopcar_textpoint {
+  display: block;
+  font-size: 40rpx;
+}
+
+.shopcar_buttonpoint {
+  border-radius: 10rem;
+  color: white;
+  background-color: red;
+  width: 180rpx;
+  margin-top: 50rpx;
+}
+
+.shopcar_list {
+  margin: 0rpx 15rpx 20rpx 15rpx;
+  border-radius: 20rpx;
+  background: white;
+}
+
+.shopcar_image {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  margin: 10rpx 0rpx 0rpx 0rpx;
+}
+
+.shopcar_pinfo {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15rpx;
+}
+
+.shopcar_pname {
+  margin: 15rpx 0rpx 0rpx 0rpx;
+}
+
+.shopcar_premark {
+  margin: 10rpx 0rpx 0rpx 0rpx;
+  color: darkgray;
+  font-size: 28rpx;
+}
+
+.shopcar_pprice {
+  display: inline-block;
+}
+
+.shopcar_money {
+  padding: 0rpx 30rpx 0rpx 5rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.shopcar_pprice {
+  margin: 0rpx 100rpx 0rpx 0rpx;
+}
+
+.shopcar_money button {
+  margin: 0rpx 10rpx 0rpx 10rpx;
+  height: 40rpx;
+  width: 60rpx;
+  background: gainsboro;
+}
+
+.shopcar_footer {
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+  height: 80rpx;
+  background: white;
+}
+
+.shopcar_footer_total {
+  display: inline-block;
+  margin: 20rpx 0rpx 0rpx 100rpx;
+}
+
+.shopcar_footer_moneyunit {
+  display: inline-block;
+  margin: 15rpx 0rpx 0rpx 0rpx;
+}
+
+.shopcar_footer_settle {
+  width: 200rpx;
+  height: 80rpx;
+  position: absolute;
+  display: inline-block;
+  right: 0rpx;
+  bottom: 0rpx;
+}
+
+.shopcar_footer_settle button {
+  background: red;
+  color: white;
+}

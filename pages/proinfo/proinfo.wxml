@@ -1,0 +1,43 @@
+<view class="proinfo">
+  <swiper class="proinfo_swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{proimg}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item.piimgurl}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="proinfo_body">
+    <text class="proinfo_body_pprice_actual_type">￥</text>
+    <text class="proinfo_body_pprice_actual">{{proinfo.pprice}}</text>
+    <text class="proinfo_body_pprice_type">￥</text>
+    <text class="proinfo_body_pprice">{{proinfo.pprice}}</text>
+    <text class="proinfo_body_fans">粉丝价</text>
+    <text class="proinfo_body_pattention">销量{{proinfo.pattention}} +</text>
+  </view>
+  <view>{{proinfo.pdesc}}</view>
+  <view>{{proinfo.premark}}</view>
+</view>
+<!--商品图片列表-->
+<view class="proinfo_imagelist" wx:for="{{proimg}}" wx:key="*this">
+  <image src="{{item.piimgurl}}" data-id="{{item.piid}}" />
+</view>
+<!--购物指南-->
+<view class="proinfo_directory">
+  <view class="proinfo_directory_title">购物指南</view>
+  <view class="proinfo_directory_content">
+    <view>1.消费者下单</view>
+    <view>1.消费者下单</view>
+    <view>1.消费者下单</view>
+    <view>1.消费者下单</view>
+    <view>1.消费者下单</view>
+    <view>1.消费者下单</view>
+  </view>
+</view>
+
+<!--底部功能-->
+<view class="proinfo_footer">
+  <view class="proinfo_footer_toHomePage">首页</view>
+  <view class="proinfo_footer_function proinfo_footer_addShopcar">加入购物车</view>
+  <view class="proinfo_footer_function proinfo_footer_toPropayPaege" bindtap="showPropay" data-index="{{proinfo.pid}}">立即购买</view>
+</view>
